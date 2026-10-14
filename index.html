@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="copyright" content="Injosoft AB" />
+    <meta name="revisit-after" content="10 Days" />
+    <meta name="keywords" content="ascii game, retro space shooter, ascii arcade, free ascii games, online space shooter, ascii art games, text based games"><meta name="description" content="Play ASCII Space Shooter, a retro arcade-inspired game in pure ASCII art. Shoot enemies, score points, and survive the endless waves!"><link rel="canonical" href="https://www.asciiart.eu/ascii-games/minigames/ascii-space-shooter" />    <title>ASCII Space Shooter, Retro Arcade in ASCII Art</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Rationale&display=swap" rel="stylesheet">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68824650-9"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());</script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0d47a1">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+            <script>
+            (() => {
+                const m = matchMedia('(prefers-color-scheme: light)');
+                document.documentElement.setAttribute('data-bs-theme', m.matches ? 'dark' : 'light');
+                m.addEventListener?.('change', e => {
+                    try {
+                        if ((localStorage.getItem('theme') || 'auto') === 'auto') {
+                            document.documentElement.setAttribute('data-bs-theme', e.matches ? 'dark' : 'light');
+                        }
+                    } catch {}
+                });
+            })();
+        </script>
+    
+    
+    <link href="/css/themes.css?v=6.5" rel="stylesheet" />
+    <link href="/css/custom.css?v=6.8" rel="stylesheet" />
+    <style>
+            </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"></head>
+<body data-page="games" data-subpage="ascii-space-shooter">
+<nav class="navbar">
+    <div class="container-fluid justify-content-between">
+        <div class="d-flex align-items-center">
+            <button class="btn btn-navbar me-2 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidemenu" aria-controls="sidemenu" aria-label="Open left menu"><i class="icon-bars"></i></button>
+            <button class="btn btn-navbar border-0 me-2 d-none d-lg-inline" id="toggleSidemenu" aria-label="Toggle left menu width"><i class="icon-bars"></i></button>
+            <a class="navbar-brand mt-1" href="/">ASCII Art Archive</a>
+        </div>
+
+        <div class="btn-group d-none d-md-flex" role="group" aria-label="Button group with nested dropdown">
+            <a href="/ascii-draw-studio/app" type="button" class="btn btn-sm btn-light rounded-start-pill border-0 me-1 px-4">Start drawing</a>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-sm btn-light rounded-end-pill dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="/image-to-ascii"><i class="icon-image-to-ascii icon-solid me-1"></i> Image to ASCII Art</a></li>
+                    <li><a class="dropdown-item" href="/text-to-ascii-art"><i class="icon-fig icon-solid me-1"></i> Text to ASCII Art</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/ascii-borders/maker"><i class="icon-border icon-solid me-1"></i> Border Maker</a></li>
+                    <li><a class="dropdown-item" href="/ascii-dividers/maker"><i class="icon-divider icon-solid me-1"></i> Divider Maker</a></li>
+                    <li><a class="dropdown-item" href="/ascii-maze-generator"><i class="icon-maze-generator icon-solid me-1"></i> Maze Generator</a></li>
+                    <li><a class="dropdown-item" href="/ascii-night-sky-generator"><i class="icon-sparkles icon-solid me-1"></i> Night Sky Generator</a></li>
+                    <li><a class="dropdown-item" href="/ascii-patterns/maker"><i class="icon-dots icon-solid me-1"></i> Pattern Maker</a></li>
+                    <li><a class="dropdown-item" href="/webcam-to-ascii-art"><i class="icon-webcam icon-solid me-1"></i> Webcam to ASCII Art</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/tools/ascii-art-analyzer"><i class="icon-image-analyze icon-solid me-1"></i> ASCII Art Analyzer</a></li>
+                    <li><a class="dropdown-item" href="/tools/ascii-validator"><i class="icon-shield-check1 icon-solid me-1"></i> ASCII Validator</a></li>
+                    <li><a class="dropdown-item" href="/tools/case-converter"><i class="icon-font-case2 icon-solid me-1"></i> Case Converter</a></li>
+                    <li><a class="dropdown-item" href="/tools/character-counter"><i class="icon-character-counter icon-solid me-1"></i> Character Counter</a></li>
+                    <li><a class="dropdown-item" href="/tools/text-cleaner"><i class="icon-text-cleaner icon-solid me-1"></i> Text Cleaner</a></li>
+                    <li><a class="dropdown-item" href="/tools/word-counter"><i class="icon-character-counter icon-solid me-1"></i> Word Counter</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul class="navbar-nav flex-row gap-2">
+            <li class="nav-item text-nowrap">
+                <div class="position-relative d-none d-lg-block">
+                    <form action="/search" method="get">
+                        <i class="icon-search position-absolute top-50 start-0 translate-middle-y ps-3 text-muted"></i>
+                        <input type="search" name="q" class="form-control form-control-sm ps-5" placeholder="Search ASCII Art" required maxlength="30">
+                    </form>
+                </div>
+                <button id="mobileSearchToggle" class="btn btn-navbar d-block d-lg-none" title="Search ASCII Art">
+                    <i class="icon-search"></i>
+                </button>
+            </li>
+            <li class="nav-item text-nowrap">
+                                    <button class="btn btn-navbar" data-bs-toggle="modal" data-bs-target="#login-modal" title="Login"><i class="icon-user"></i><span class="d-none d-md-inline"> Login</span></button>
+                            </li>
+                        <li class="nav-item text-nowrap d-none d-sm-inline">
+                <button class="btn btn-navbar" type="button" data-bs-toggle="offcanvas" data-bs-target="#settingsPanel" aria-controls="settingsPanel" title="Settings">
+                    <i class="icon-cog"></i>
+                </button>
+            </li>
+                    </ul>
+
+        <div id="mobileSearchBar" class="navbar-search w-100 h-100 d-none position-absolute top-0 start-0 p-2 z-3">
+            <form action="/search" method="get" class="w-100 h-100 d-flex align-items-center">
+                <i class="icon-search position-absolute top-50 start-0 translate-middle-y ps-3 text-muted"></i>
+                <input type="search" name="q" class="form-control form-control-sm border-light pe-2 py-1" placeholder="Search ASCII Art" id="mobileSearchInput">
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-end context-menu" tabindex="-1" id="settingsPanel">
+    <div class="offcanvas-header py-2">
+        <h2 class="offcanvas-title font-rationale">Settings</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="alert alert-warning px-2 py-1 small">The page will reload to apply your changes.</div>
+        <div class="h6">Theme</div>
+        <div class="form-check href">
+            <input class="form-check-input" type="radio" name="theme" id="themeAuto" value="auto" checked />
+            <label class="form-check-label" for="themeAuto">Auto</label>
+        </div>
+        <div class="form-check href">
+            <input class="form-check-input" type="radio" name="theme" id="themeLight" value="light" />
+            <label class="form-check-label" for="themeLight">Light</label>
+        </div>
+        <div class="form-check href">
+            <input class="form-check-input" type="radio" name="theme" id="themeDark" value="dark" />
+            <label class="form-check-label" for="themeDark">Dark</label>
+        </div>
+        <!--div class="form-check href">
+            <input class="form-check-input" type="radio" name="theme" id="themeDarkGreen" value="darkgreen" />
+            <label class="form-check-label" for="themeDarkGreen">DarkGreen</label>
+        </div-->
+        <!--small class="fw-medium">Retro themes</small>
+        <div class="form-check href">
+            <input class="form-check-input" type="radio" name="theme" id="themeCommodore" value="commodore" />
+            <label class="form-check-label" for="themeCommodore">Commodore 64</label>
+        </div>
+        <div class="form-check href">
+            <input class="form-check-input" type="radio" name="theme" id="themeDos" value="dos" />
+            <label class="form-check-label" for="themeDos">Microsoft Dos</label>
+        </div>
+        <div class="form-check href">
+            <input class="form-check-input" type="radio" name="theme" id="themeJgs" value="jgs7" />
+            <label class="form-check-label" for="themeJgs">Joan G. Stark</label>
+        </div-->
+        <hr>
+        <div class="h6">ASCII Art Font</div>
+                    <!--div class="form-check href">
+                <input
+                        class="form-check-input"
+                        type="radio"
+                        name="preFont"
+                        id="font_default"
+                        value="default"
+                    checked                />
+                <label class="form-check-label" for="font_default">
+                    Default                                    </label>
+            </div-->
+                    <!--div class="form-check href">
+                <input
+                        class="form-check-input"
+                        type="radio"
+                        name="preFont"
+                        id="font_commodore"
+                        value="commodore"
+                                    />
+                <label class="form-check-label" for="font_commodore">
+                    Commodore                                    </label>
+            </div-->
+                    <!--div class="form-check href">
+                <input
+                        class="form-check-input"
+                        type="radio"
+                        name="preFont"
+                        id="font_jgs5"
+                        value="jgs5"
+                                    />
+                <label class="form-check-label" for="font_jgs5">
+                    Jgs5                                            <small>(sizes multiples of 10)</small>
+                                    </label>
+            </div-->
+                    <!--div class="form-check href">
+                <input
+                        class="form-check-input"
+                        type="radio"
+                        name="preFont"
+                        id="font_jgs7"
+                        value="jgs7"
+                                    />
+                <label class="form-check-label" for="font_jgs7">
+                    Jgs7                                            <small>(sizes multiples of 14)</small>
+                                    </label>
+            </div-->
+                    <!--div class="form-check href">
+                <input
+                        class="form-check-input"
+                        type="radio"
+                        name="preFont"
+                        id="font_jgs9"
+                        value="jgs9"
+                                    />
+                <label class="form-check-label" for="font_jgs9">
+                    Jgs9                                            <small>(sizes multiples of 18)</small>
+                                    </label>
+            </div-->
+                    <!--div class="form-check href">
+                <input
+                        class="form-check-input"
+                        type="radio"
+                        name="preFont"
+                        id="font_ibm"
+                        value="ibm"
+                                    />
+                <label class="form-check-label" for="font_ibm">
+                    IBM VGA 8x16                                    </label>
+            </div-->
+            </div>
+</div>
+
+
+<div class="main-wrapper">
+    <div class="offcanvas offcanvas-start offcanvas-lg sidemenu" tabindex="-1" id="sidemenu" aria-label="Left menu">
+        <div class="offcanvas-header d-lg-none py-2">
+            <h2 class="offcanvas-title font-rationale">ASCII Art Menu</h2>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body py-2">
+            <ul class="nav flex-column mb-4">
+                <li class="nav-item"><a id="nav-home" class="nav-link" href="/"><i class="icon-home"></i><span>Home</span></a></li>
+                <li class="nav-item"><hr class="nav-divider"></li>
+                <li class="nav-item"><a id="nav-gallery" class="nav-link" href="/gallery"><i class="icon-images"></i><span>ASCII Art Gallery</span></a></li>
+                <li class="nav-item"><hr class="nav-divider"></li>
+                <li class="nav-item"><a id="nav-animations" class="nav-link" href="/animations"><i class="icon-film"></i><span>ASCII Animations</span></a></li>
+                <li class="nav-item"><a id="nav-collections" class="nav-link" href="/collections"><i class="icon-books"></i><span>ASCII Art Collections</span></a></li>
+                <li class="nav-item"><a id="nav-art-tools" class="nav-link" href="/tools"><i class="icon-tools"></i><span>ASCII Art Tools</span></a></li>
+                <li class="nav-item"><a id="nav-draw-studio" class="nav-link" href="/ascii-draw-studio"><i class="icon-paint-brush"></i><span>ASCII Draw Studio</span></a></li>
+                <li class="nav-item"><a id="nav-borders" class="nav-link" href="/ascii-borders"><i class="icon-square"></i><span>ASCII Borders</span></a></li>
+                <li class="nav-item"><a id="nav-dividers" class="nav-link" href="/ascii-dividers"><i class="icon-divider"></i><span>ASCII Dividers</span></a></li>
+                <li class="nav-item"><a id="nav-games" class="nav-link" href="/ascii-games"><i class="icon-gamepad"></i><span>ASCII Games</span></a></li>
+                <li class="nav-item"><a id="nav-patterns" class="nav-link" href="/ascii-patterns"><i class="icon-dots"></i><span>ASCII Patterns</span></a></li>
+                <li class="nav-item"><a id="nav-one-line" class="nav-link" href="/one-line"><i class="icon-one"></i><span>One Line ASCII Art</span></a></li>
+                <li class="nav-item"><hr class="nav-divider"></li>
+                <li class="nav-item"><a id="nav-shop" class="nav-link" href="/binaryia"><i class="icon-store"></i><span>Shop</span></a></li>
+                <li class="nav-item"><hr class="nav-divider"></li>
+                <li class="nav-item"><a id="nav-artists" class="nav-link" href="/artists"><i class="icon-users"></i><span>ASCII Artists</span></a></li>
+                <li class="nav-item"><a id="nav-archives" class="nav-link" href="/archives"><i class="icon-books"></i><span>Historic Archives</span></a></li>
+                <li class="nav-item"><a id="nav-faq" class="nav-link" href="/faq"><i class="icon-question-circle"></i><span>ASCII Art FAQ</span></a></li>
+                <li class="nav-item"><a id="nav-glossary" class="nav-link" href="/glossary"><i class="icon-study"></i><span>ASCII Art Glossary</span></a></li>
+                <li class="nav-item"><a id="nav-links" class="nav-link" href="/ascii-art-links"><i class="icon-link"></i><span>ASCII Art Links</span></a></li>
+                <li class="nav-item"><a id="nav-table" class="nav-link" href="https://www.ascii-code.com"><i class="icon-table"></i><span>ASCII Table</span></a></li>
+                <li class="nav-item"><hr class="nav-divider"></li>
+                <li class="nav-item"><a id="nav-ascii-fun" class="nav-link" href="/ascii-fun"><i class="icon-lightbulb-on"></i><span>ASCII Fun</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content" id="mainContent" role="main">
+        <div class="container-wide">
+            <!--
+                            <div class="row justify-content-center">
+                    <div class="col flex-center">
+                        <div id="message-released" class="alert alert-success alert-dismissible fade show mt-2 ps-4 pe-5 text-start text-success-emphasis fw-semibold" role="alert">
+                            ASCII Art Archive v2 – Now live with a new layout and weekly updates. <a href="/release-notes">Read more</a>.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" onclick="hideReleaseInfo();"></button>
+                        </div>
+                    </div>
+                </div>
+                        -->
+            <div class="row justify-content-center">
+                <div class="col px-0 px-md-2">
+                    <div class="text-center">
+                        <div class="text-truncate mt-2 small d-none d-md-block"><span>A fast-paced ASCII arcade shooter where you blast enemies, dodge attacks, and aim for the highest score</span></div>
+                        <div class="ascii-art-label rounded m-0">
+                            <div class="d-none d-md-inline"><pre class="p-0 m-0 mb-2">    _    ____   ____ ___ ___   ____                         ____  _                 _            
+   / \  / ___| / ___|_ _|_ _| / ___| _ __   __ _  ___ ___  / ___|| |__   ___   ___ | |_ ___ _ __ 
+  / _ \ \___ \| |    | | | |  \___ \| '_ \ / _` |/ __/ _ \ \___ \| '_ \ / _ \ / _ \| __/ _ \ '__|
+ / ___ \ ___) | |___ | | | |   ___) | |_) | (_| | (_|  __/  ___) | | | | (_) | (_) | ||  __/ |   
+/_/   \_\____/ \____|___|___| |____/| .__/ \__,_|\___\___| |____/|_| |_|\___/ \___/ \__\___|_|   
+                                    |_|                                                          </pre></div>
+                            <div class="d-block d-md-none d-flex">    <div class="ascii-art-label-return"><a href="/ascii-games/minigames" class="d-flex align-items-center justify-content-center h-100 px-2" title="Minigames"><i class="icon-arrow-alt-left icon-solid"></i></a></div>    <div class="pixelify-sans-400 flex-fill text-truncate px-2">ASCII Space Shooter</div>    <div class="ascii-art-label-menu"><button class="btn border-0 d-flex align-items-center justify-content-center h-100 px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#context-menu" aria-controls="context-menu"><i class="icon-ellipsis-v icon-solid"></i></button></div></div>                        </div>
+
+                        <nav aria-label="breadcrumb" class="breadcrumb-container d-none d-md-flex align-items-center justify-content-between border rounded-1 mt-2"><div class="breadcrumb-menu-home"><a href="/" class="px-2"><i class="icon-home"></i></a></div><ol class="breadcrumb flex-fill my-0 mx-2"><li class="breadcrumb-item"><a href="/ascii-games" title="ASCII Games">ASCII Games</a></li><li class="breadcrumb-item"><a href="/ascii-games/minigames" title="Minigames">Minigames</a></li><li class="breadcrumb-item active" aria-current="page">ASCII Space Shooter</li></ol><div class="breadcrumb-menu"><button class="btn border-0 d-flex align-items-center justify-content-center h-100 px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#context-menu" aria-controls="context-menu"><i class="icon-ellipsis-v icon-solid"></i></button></div></nav>                    </div>
+                </div>
+            </div>
+        </div><div class="offcanvas offcanvas-end sidebar context-menu" tabindex="-1" id="context-menu">
+    <div class="offcanvas-header py-2">
+        <h2 class="offcanvas-title font-rationale">ASCII Art Games</h2>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body py-2">
+        <ul class="nav flex-column mb-4">
+            <li class="nav-item"><a id="nav-sidebar-ascii-alien-attack" class="nav-link" href="/ascii-games/minigames/ascii-alien-attack"><span>ASCII Alien Attack</span></a></li><li class="nav-item"><a id="nav-sidebar-ascii-battelship" class="nav-link" href="/ascii-games/minigames/ascii-battelship"><span>ASCII Battelship</span></a></li><li class="nav-item"><a id="nav-sidebar-ascii-bird-shooting" class="nav-link" href="/ascii-games/minigames/ascii-bird-shooting"><span>ASCII Bird Shooting</span></a></li><li class="nav-item"><a id="nav-sidebar-ascii-blackjack" class="nav-link" href="/ascii-games/minigames/ascii-blackjack"><span>ASCII BlackJack</span></a></li><li class="nav-item"><a id="nav-sidebar-ascii-block-dropper" class="nav-link" href="/ascii-games/minigames/ascii-block-dropper"><span>ASCII Block Dropper</span></a></li><li class="nav-item"><a id="nav-sidebar-ascii-boss-battle" class="nav-link" href="/ascii-games/minigames/ascii-boss-battle"><span>ASCII Boss Battle</span></a></li><li class="nav-item"><a id="nav-sidebar-ascii-crazy-street" class="nav-link" href="/ascii-games/minigames/ascii-crazy-street"><span>ASCII CRAZY Street</span></a></li><li class="nav-item"><a id="nav-sidebar-ascii-crossy-frog" class="nav-link" href="/ascii-games/minigames/ascii-crossy-frog"><span>ASCII Crossy Frog</span></a></li><li class="nav-item"><a id="nav-sidebar-ascii-dot-eater" class="nav-link" href="/ascii-games/minigames/ascii-dot-eater"><span>ASCII Dot-Eater</span></a></li><li class="nav-item"><a id="nav-sidebar-ascii-flappy-animals" class="nav-link" href="/ascii-games/minigames/ascii-flappy-animals"><span>ASCII Flappy Animals</span></a></li><li class="nav-item"><a id="nav-sidebar-ascii-four-in-a-row" class="nav-link" href="/ascii-games/minigames/ascii-four-in-a-row"><span>ASCII Four In A Row</span></a></li><li class="nav-item"><a id="nav-sidebar-ascii-hangman" class="nav-link" href="/ascii-games/minigames/ascii-hangman"><span>ASCII Hangman</span></a></li><li class="nav-item"><a id="nav-sidebar-ascii-keyboard-dancer" class="nav-link" href="/ascii-games/minigames/ascii-keyboard-dancer"><span>ASCII Keyboard Dancer</span></a></li><li class="nav-item"><a id="nav-sidebar-ascii-minesweeper" class="nav-link" href="/ascii-games/minigames/ascii-minesweeper"><span>ASCII Minesweeper</span></a></li><li class="nav-item"><a id="nav-sidebar-ascii-monster-escape" class="nav-link" href="/ascii-games/minigames/ascii-monster-escape"><span>ASCII Monster Escape</span></a></li><li class="nav-item"><a id="nav-sidebar-ascii-skiing" class="nav-link" href="/ascii-games/minigames/ascii-skiing"><span>ASCII Skiing</span></a></li><li class="nav-item"><a id="nav-sidebar-ascii-snake" class="nav-link" href="/ascii-games/minigames/ascii-snake"><span>ASCII Snake</span></a></li><li class="nav-item"><a id="nav-sidebar-ascii-space-shooter" class="nav-link" href="/ascii-games/minigames/ascii-space-shooter"><span>ASCII Space Shooter</span></a></li><li class="nav-item"><a id="nav-sidebar-ascii-typeracer" class="nav-link" href="/ascii-games/minigames/ascii-typeracer"><span>ASCII TypeRacer</span></a></li>        </ul>
+    </div>
+</div>
+    <style>
+        /* ====== Temafärger ====== */
+.theme-white .player { color: white; }
+.theme-white .enemy { color: white; }
+.theme-white .bullet { color: yellow; }
+
+.theme-pastel .player { color: #886400; }
+.theme-pastel .enemy { color: lightblue; }
+.theme-pastel .bullet { color: #19ff27; }
+
+.theme-technology .player { color: #00ffff; }
+.theme-technology .enemy { color: #00ac1d; }
+.theme-technology .bullet { color: #00aeff; }
+
+.theme-alien .player { color: #aaff00; }
+.theme-alien .enemy { color: #ff55ff; }
+.theme-alien .bullet { color: #55ffff; }
+
+.theme-mars .player { color: #ff4500; }
+.theme-mars .enemy { color: #8b0000; }
+.theme-mars .bullet { color: #ffcc00; }
+
+/* ====== Spelcontainer ====== */
+.game-area-inner-container {
+  background: black;
+  color: white;
+  font-family: monospace;
+  font-size: 24px;
+  display: inline-block;
+  position: relative; /* Viktigt för overlay och modal */
+  padding: 18px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+#game {
+  color: white;
+  white-space: pre;
+  line-height: 1.1;
+  margin-top: 10px;
+  display: inline-block;
+  background: black;
+  overflow: hidden;
+}
+
+#game-message {
+  white-space: pre;
+  color: red;
+  margin-top: 5px;
+  text-align: center;
+  overflow: hidden;
+}
+
+h1 {
+  margin: 10px;
+}
+
+button {
+  margin-top: 12px;
+  padding: 10px 14px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+label {
+  font-size: 14px;
+  margin-right: 12px;
+}
+
+input[type="range"] {
+  vertical-align: middle;
+  transform: scale(1);
+}
+
+.control-panel {
+  padding: 10px;
+}
+
+#score {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* ====== GAME OVER modal ====== */
+#game-over-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;  /* Matchar containerbredd */
+  height: 100%; /* Matchar containerhöjd */
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #111;
+  border: 2px solid white;
+  padding: 30px 40px;
+  text-align: center;
+  color: white;
+  font-family: monospace;
+  font-size: 24px;
+}
+
+.modal-text {
+  margin-bottom: 20px;
+  white-space: pre;
+}
+
+/* ====== START OVERLAY ====== */
+#start-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;  /* Matchar containerbredd */
+  height: 100%; /* Matchar containerhöjd */
+  background: transparent;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-family: monospace;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.start-box {
+  background: rgba(0, 0, 0, 1);
+  padding: 12px 24px;
+  border: 2px solid white;
+  border-radius: 6px;
+  text-shadow: 0 0 10px black;
+}
+    </style>
+
+    <div class="container-wide">
+        <div class="row justify-content-center mt-3">
+            <div class="col col-lg-11 col-xl-10 col-xxl-9">
+                <div class="ascii-frame">
+                    Welcome to our ASCII Space Shooter, an action-packed retro experience that blends arcade intensity with nostalgic ASCII charm! Dodge incoming waves of enemies, fire precision shots, and rack up points as you survive the relentless onslaught of pixel-like invaders. With customizable controls, multiple difficulty levels, and colorful visual styles, every game feels fresh and thrilling. Whether you’re chasing high scores or just love classic space battles reimagined in text form, this shooter delivers fast-paced excitement and pure ASCII-powered fun!                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-3">
+            <div class="col col-lg-11 col-xl-10 col-xxl-9">
+                <div id="game-controls-container" class="game-controls-container px-3">
+                                            <div class="card">
+                            <div class="card-body">
+                                <div class="control-panel">
+  <label>Game Width: <input type="range" id="width" min="10" max="60" value="24" oninput="handleSliderChange()" /></label>
+  <label>Game Height: <input type="range" id="height" min="10" max="30" value="20" oninput="handleSliderChange()" /></label>
+  <label>Difficulty: <input type="range" id="difficulty" min="1" max="10" value="5" oninput="handleSliderChange()" /></label><br><br>
+  <label>Select Theme:
+    <select id="themeSelector" onchange="applyTheme()">
+      <option value="default">Default</option>
+      <option value="space">Space</option>
+      <option value="retro">Retro</option>
+      <option value="alien">Alien</option>
+    </select>
+  </label>
+  <label>Color Theme:
+    <select id="colorTheme" onchange="applyColorTheme()">
+      <option value="white">White</option>
+      <option value="pastel">Earth</option>
+      <option value="technology">Technology</option>
+      <option value="alien">Alien</option>
+      <option value="mars">Mars</option>
+    </select>
+  </label><br><br>
+  <label>Player Symbol: <input id="playerSymbol" value="A" maxlength="1" size="1" oninput="updateSymbols()" /></label>
+  <label>Enemy Symbol: <input id="enemySymbol" value="@" maxlength="1" size="1" oninput="updateSymbols()" /></label>
+  <label>Bullet Symbol: <input id="bulletSymbol" value="|" maxlength="1" size="1" oninput="updateSymbols()" /></label>
+  <!-- Removed Background input -->
+</div>                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-3">
+            <div class="col col-lg-11 col-xl-10 col-xxl-9">
+                <div id="game-area-container" class="game-area-container px-3">
+                                            <div class="game-area-inner-container">
+  <div id="score">Score: 0</div>
+  <pre id="game"></pre>
+  <div id="game-message"></div>
+
+  <!-- GAME OVER MODAL -->
+  <div id="game-over-modal">
+    <div class="modal-content">
+      <div class="modal-text">! GAME OVER !<br>Score: <span id="final-score"></span></div>
+      <button onclick="startCustomGame()">Restart</button>
+    </div>
+  </div>
+
+  <!-- START OVERLAY -->
+  <div id="start-overlay">
+    <div class="start-box">
+      Shoot to start
+    </div>
+  </div>
+</div>                                    </div>
+            </div>
+        </div>
+
+                    <div class="row justify-content-center mt-5">
+                <div class="col col-lg-11 col-xl-10 col-xxl-9">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="h4">Instruction</h2>
+                            Controls:<br />
+- Arrow Left / A = Move Left<br />
+- Arrow Right / D = Move Right<br />
+- Arrow Up / W / Space = Shoot<br />
+<br />
+Settings:<br />
+- Adjust game width, height, and difficulty before starting.<br />
+- Select from multiple color themes: White, Earth, Technology, Alien, Mars.<br />
+- Change player, enemy, and bullet symbols anytime for a custom look.<br />
+<br />
+Goal:<br />
+Survive as long as possible while shooting enemies and earning points. Each enemy destroyed increases your score. Avoid collisions with enemies or you'll face GAME OVER. Challenge yourself by increasing difficulty or narrowing the game field for an extra thrill.                        </div>
+                    </div>
+                </div>
+            </div>
+        
+                    <div class="row justify-content-center mt-5">
+                <div class="col col-lg-11 col-xl-10 col-xxl-9">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="h4">Acknowledgments and credits</h2>
+                            ASCII Space Shooter is an original game created, designed, and programmed by Elias Wejdin, and developed under the Injosoft brand. All rights to the game name, source code, design, and ASCII artwork are reserved by Injosoft. Any reproduction, modification, or redistribution without prior written permission is strictly prohibited.                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="flex-center g-4 mt-5">
+            <a class="btn btn-primary text-white" href="/ascii-games/">← Back to ASCII Minigames</a>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col col-lg-11 col-xl-10 col-xxl-9">
+                <div class="text-center">
+                    <hr class="repeat-hr mb-4" data-content="<>">
+                    <em>Thanks for playing and keeping the ASCII gaming spirit alive!</em>
+                    <hr class="repeat-hr mt-4" data-content="<>">
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col col-lg-11 col-xl-10 col-xxl-9">
+                <h2 class="h3"><b>Want More? Try These ASCII Games</b></h2>
+                <div class="card-grid-2 mt-3 mb-5">
+                    
+                <a href="/ascii-games/minigames/ascii-monster-escape" class="card card-href" title="ASCII Monster Escape">
+                    <div class="card-body">
+                        <span class="text-primary fw-medium">ASCII Monster Escape</span> – Run, jump, and climb to safety in this fast-paced ASCII platformer. Navigate through many platforms and escape before the relentless monster catches up to you. Can you do it?
+                    </div>
+                </a>
+                    
+                <a href="/ascii-games/minigames/ascii-alien-attack" class="card card-href" title="ASCII Alien Attack">
+                    <div class="card-body">
+                        <span class="text-primary fw-medium">ASCII Alien Attack</span> – A retro-style ASCII art shooter inspired by the legendary Space Invaders. Defend your base from relentless alien waves, protect your shields, and aim for the highest score in this text-based arcade challenge.
+                    </div>
+                </a>
+                    
+                <a href="/ascii-games/minigames/ascii-crossy-frog" class="card card-href" title="ASCII Crossy Frog">
+                    <div class="card-body">
+                        <span class="text-primary fw-medium">ASCII Crossy Frog</span> – Jump across roads and rivers in this ASCII-style remake of the classic Frogger game. Time your moves, avoid cars and hazards, and collect as many points as possible before your lives run out.
+                    </div>
+                </a>
+                    
+                <a href="/ascii-games/minigames/ascii-minesweeper" class="card card-href" title="ASCII Minesweeper">
+                    <div class="card-body">
+                        <span class="text-primary fw-medium">ASCII Minesweeper</span> – A fresh take on the classic with ASCII graphics, vibrant themes, and multiple difficulty levels. Mark bombs, clear safe tiles, and race the clock. Simple, nostalgic, and endlessly addictive puzzle fun.
+                    </div>
+                </a>
+                                    </div>
+
+                <div class="text-center"><hr class="repeat-hr mt-5" data-content="<>"></div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col col-lg-11 col-xl-10 col-xxl-9">
+                <h2 class="h3"><b>Need a Break? Read These ASCII Articles</b></h2>
+                <div class="card-grid-2 mt-3 mb-5">
+                    
+                <a href="/ascii-games/articles/adding-color-and-animation-to-your-ascii-games" class="card card-href" title="Adding Color and Animation to Your ASCII Games">
+                    <div class="card-body">
+                        <span class="text-primary fw-medium">Adding Color and Animation to Your ASCII Games</span> – Learn simple tricks to make your ASCII games feel alive using colors, flickering effects, and basic animations while keeping the retro charm intact.
+                    </div>
+                </a>
+                    
+                <a href="/ascii-games/articles/why-ascii-games-are-perfect-for-learning-to-code" class="card card-href" title="Why ASCII Games Are Perfect for Learning to Code">
+                    <div class="card-body">
+                        <span class="text-primary fw-medium">Why ASCII Games Are Perfect for Learning to Code</span> – Discover why ASCII games are the ideal way to start coding. Learn core programming concepts, clean coding habits, and algorithms while keeping things fun.
+                    </div>
+                </a>
+                    
+                <a href="/ascii-games/articles/nethack-the-ultimate-ascii-dungeon-adventure" class="card card-href" title="NetHack The Ultimate ASCII Dungeon Adventure">
+                    <div class="card-body">
+                        <span class="text-primary fw-medium">NetHack The Ultimate ASCII Dungeon Adventure</span> – Explore NetHack, the ultimate ASCII dungeon adventure in this easy-to-read introduction to one of gaming’s most legendary roguelikes.
+                    </div>
+                </a>
+                    
+                <a href="/ascii-games/articles/how-to-build-snake-in-ascii-with-javascript" class="card card-href" title="How to Build Snake in ASCII with JavaScript">
+                    <div class="card-body">
+                        <span class="text-primary fw-medium">How to Build Snake in ASCII with JavaScript</span> – Learn how to create a simple Snake game using only ASCII characters and JavaScript. A perfect starting point for anyone curious about coding retro-style games.
+                    </div>
+                </a>
+                                    </div>
+            </div>
+        </div>
+    </div>
+
+<div class="modal" id="login-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+                        <form method="post" action="/account/login?redirect=%2Fascii-games%2Fminigames%2Fascii-space-shooter">
+                <input type="hidden" name="csrf_token" value="bf39eca5e673575aaad3f77c25a47ce9cbb4e3042c1ea54da7cc09dc94049065">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="modal-email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="modal-email" name="email" required autocomplete="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="modal-password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="modal-password" name="password" required autocomplete="current-password">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="modal-remember" name="remember">
+                        <label class="form-check-label" for="modal-remember">Remember me</label>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <div class="small">
+                        <a href="/account/forgot">Forgot password?</a>
+                    </div>
+                    <div>
+                        <a href="/account/register" class="btn btn-outline-secondary me-2">Register</a>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container-wide text-center mt-5">
+    <footer class="footer">
+        <hr class="repeat-hr" data-content="^-" data-content-end="^" data-max-width="850">
+        <div class="d-inline-block small w-sm-90">
+            <span class="d-inline d-xl-block">The ASCII art of this website has been created by many different artists and credit has been given where the artist is known.</span>
+            <span>If you use ASCII artwork from here, please do not remove the artists name/initials if they are present.</span>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col col-sm-10 col-md-8 col-lg-7 col-xl-6 col-xxl-5">
+                <div class="mt-4 d-flex flex-wrap justify-content-center gap-3">
+                    <a class="hover-underline" href="/about-ascii-art-archive">About ASCII Art Archive</a>
+                    <a class="hover-underline" href="/acknowledgments">Acknowledgments</a>
+                    <a class="hover-underline" href="/release-notes">What’s New</a>
+                    <a class="hover-underline" href="/link-to-us">Link To Us</a>
+                    <a class="hover-underline" href="/cookie-policy">Cookie policy</a>
+                    <a class="hover-underline" href="/privacy-policy">Privacy policy</a>
+                    <a class="hover-underline" href="/terms-of-use">Terms of Use</a>
+                    <a class="hover-underline change-consent" href="#" onclick="window.__tcfapi('displayConsentUi', 2, function() {} );return false;" tabindex="0">Consent</a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4">
+            Copyright &copy; 2026 <a href="http://www.injosoft.com/">Injosoft</a><span class="d-none d-sm-inline">. All Rights Reserved.</span>
+        </div>
+        <div class="mt-4 mb-5"><small><i class="icon-heart text-danger" style="font-size:90%;" title="Love"></i> Be kind!</small></div>
+    </footer>
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+    (()=>{"use strict";const{page:e,subpage:t}=document.body.dataset||{},n=e=>{const t=e&&document.getElementById(e);return!!t&&(t.classList.add("active"),t.setAttribute("aria-current","page"),!0)};e&&n("nav-"+e);!(!!t&&n("nav-sidebar-"+t))&&e&&n("nav-sidebar-"+e);const o=(e,t=document)=>t.querySelector(e),a=(e,t=document)=>Array.from(t.querySelectorAll(e)),i=()=>window.innerWidth>=992,s={set(e,t,{days:n=180,path:o="/",sameSite:a="Lax",secure:i="https:"===location.protocol}={}){const s=24*n*60*60;let r=`${encodeURIComponent(e)}=${encodeURIComponent(t)}; Max-Age=${s}; Path=${o}; SameSite=${a}`;i&&(r+="; Secure"),document.cookie=r},get:e=>document.cookie.split("; ").map((e=>e.split("="))).reduce(((e,[t,n])=>(e[decodeURIComponent(t)]=n?decodeURIComponent(n):"",e)),{})[e]},r=(()=>{const e="theme",t=new Set(["commodore","msdos"]),n=document.documentElement,o=matchMedia("(prefers-color-scheme: dark)");let a=!1;const i=()=>s.get(e)||localStorage.getItem(e)||"auto",r=e=>{if("auto"===e){const e=o.matches?"dark":"light";return n.setAttribute("data-bs-theme",e),void(a||(o.addEventListener?.("change",(e=>{"auto"===i()&&n.setAttribute("data-bs-theme",e.matches?"dark":"light")})),a=!0))}n.setAttribute("data-bs-theme",e)};return{initControls:()=>{const n=i();t.has(n)||r(n),(e=>{const t="#t"+e.charAt(0).toUpperCase()+e.slice(1),n=document.querySelector(t);n&&(n.checked=!0)})(n),document.querySelectorAll('input[name="theme"]').forEach((n=>{n.addEventListener("change",(()=>(n=>{try{localStorage.setItem(e,n)}catch{}s.set(e,n),t.has(n)?location.reload():r(n)})(n.value)))}))}}})(),d=(()=>{function e(){document.querySelectorAll(".repeat-hr").forEach((e=>{const t=e.dataset.content||"-",n=e.dataset.contentEnd||"",o=getComputedStyle(e).fontFamily,a=parseFloat(e.dataset.maxWidth),i=e.clientWidth||0,s=Number.isFinite(a)?Math.min(i,a):i,r=function(e,t="monospace"){const n=document.createElement("span");n.style.visibility="hidden",n.style.position="absolute",n.style.whiteSpace="nowrap",n.style.fontFamily=t,n.textContent=e,document.body.appendChild(n);const o=n.offsetWidth/Math.max(1,e.length);return n.remove(),o}(t,o),d=t.length*r;let c=d>0?Math.floor((s+.5)/d)-1:0;c<0&&(c=0),e.setAttribute("data-fill",t.repeat(c)+n)}))}return{init:()=>{e(),window.addEventListener("resize",e),window.addEventListener("orientationchange",e),document.fonts?.ready&&document.fonts.ready.then(e)},refresh:()=>e(),destroy:()=>{window.removeEventListener("resize",e),window.removeEventListener("orientationchange",e)}}})(),c={enableFor:e=>{a(".nav-link",e).forEach((e=>{const t=e.querySelector("span"),n=(t?t.textContent:e.textContent).trim();e.setAttribute("aria-label",n);const o=bootstrap.Tooltip.getInstance(e);o?(o.setContent({".tooltip-inner":n}),o.enable()):new bootstrap.Tooltip(e,{title:n,placement:"right",trigger:"hover focus",container:"body",boundary:"viewport",delay:{show:150,hide:50}})}))},disableFor:e=>{a(".nav-link",e).forEach((e=>{const t=bootstrap.Tooltip.getInstance(e);t&&t.dispose()}))}},l=(()=>{const e=o("#sidemenu"),t=o("#mainContent"),n=o("#toggleSidemenu");if(!e||!t)return{init:()=>{}};const a=()=>e.classList.contains("collapsed"),r=()=>{i()&&a()?c.enableFor(e):c.disableFor(e)},d=()=>{i()&&(e.classList.toggle("collapsed"),t.classList.toggle("collapsed"),r(),i()&&s.set("sidemenu_collapsed",a()?"1":"0"))},l=((e,t=150)=>{let n;return(...o)=>{clearTimeout(n),n=setTimeout((()=>e(...o)),t)}})((()=>{r()}),120);return{init:()=>{n?.addEventListener("click",d),r(),window.addEventListener("resize",l),e.addEventListener("shown.bs.offcanvas",r),e.addEventListener("hidden.bs.offcanvas",r)}}})(),m=(()=>{const e=o("#mobileSearchToggle"),t=o("#mobileSearchBar"),n=o("#mobileSearchInput"),a=()=>{t&&(t.classList.remove("d-none"),n?.focus())},i=()=>{t&&t.classList.add("d-none")};return{init:()=>{e&&t&&n&&(e.addEventListener("click",a),n.addEventListener("keydown",(e=>{"Escape"===e.key&&i()})),n.addEventListener("blur",(()=>{setTimeout(i,200)})))}}})(),u={init:()=>{r.initControls(),l.init(),m.init(),d.init()}};"loading"===document.readyState?document.addEventListener("DOMContentLoaded",u.init,{once:!0}):u.init()})();
+
+    (function () {
+        const Cookie = {
+            set(name, value, { days = 180, path = "/", sameSite = "Lax", secure = (location.protocol === "https:") } = {}) {
+                const maxAge = days * 24 * 60 * 60;
+                let str = `${encodeURIComponent(name)}=${encodeURIComponent(value)}; Max-Age=${maxAge}; Path=${path}; SameSite=${sameSite}`;
+                if (secure) str += "; Secure";
+                document.cookie = str;
+            },
+            get(name) {
+                return document.cookie
+                    .split("; ")
+                    .map(x => x.split("="))
+                    .reduce((acc, [k, v]) => (acc[decodeURIComponent(k)] = v ? decodeURIComponent(v) : "", acc), {})
+                    [name];
+            }
+        };
+
+        window.hideReleaseInfo = function () {
+            Cookie.set('release_info_hidden', '1', { days: 365 });
+        };
+
+        // Run after DOM is ready
+        document.addEventListener("DOMContentLoaded", () => {
+            const radios = document.querySelectorAll('input[type="radio"][name="preFont"]');
+            if (!radios.length) return;
+
+            // Handle change -> set cookie -> reload
+            radios.forEach(radio => {
+                radio.addEventListener("change", (e) => {
+                    const value = e.target.value;
+
+                    // Avoid redundant reloads if nothing actually changed
+                    if (Cookie.get("preFont") === value) return;
+
+                    try {
+                        Cookie.set("preFont", value); // 180 days by default
+                    } catch (err) {
+                        console.error("Failed to set preFont cookie:", err);
+                    }
+
+                    // (Optional) brief delay to let UI update/accessibility announce
+                    setTimeout(() => {
+                        // Disable inputs to prevent double triggers
+                        radios.forEach(r => r.disabled = true);
+                        // Reload the page to apply the new preview font
+                        location.reload();
+                    }, 100);
+                }, { passive: true });
+            });
+        });
+    })();
+
+    // Account panel theme sync
+    (function() {
+        var radios = document.querySelectorAll('input[name="accountTheme"]');
+        if (!radios.length) return;
+        // Sync initial state from cookie/localStorage
+        var current = (document.cookie.match(/(?:^|; )theme=([^;]*)/) || [])[1] || localStorage.getItem('theme') || 'auto';
+        radios.forEach(function(r) { r.checked = (r.value === current); });
+        // Handle change
+        radios.forEach(function(r) {
+            r.addEventListener('change', function() {
+                var v = r.value;
+                document.cookie = 'theme=' + v + '; Max-Age=15552000; Path=/; SameSite=Lax';
+                try { localStorage.setItem('theme', v); } catch(e) {}
+                // Sync settings panel radios
+                var s = document.querySelector('input[name="theme"][value="' + v + '"]');
+                if (s) s.checked = true;
+                // Apply theme
+                if (v === 'auto') {
+                    document.documentElement.setAttribute('data-bs-theme', matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                } else {
+                    document.documentElement.setAttribute('data-bs-theme', v);
+                }
+            });
+        });
+    })();
+</script>    <script>
+                const themes = {
+  default: { player: "A", enemy: "@", bullet: "|" },
+  space:   { player: "π", enemy: "ò", bullet: "║" },
+  retro:   { player: "∩", enemy: "O", bullet: "." },
+  alien:   { player: "Σ", enemy: "Θ", bullet: "*" }
+};
+
+function applyColorTheme() {
+  const theme = document.getElementById("colorTheme").value;
+  const body = document.body;
+  body.className = body.className.replace(/theme-\w+/g, "").trim();
+  body.classList.add("theme-" + theme);
+  if (currentGame) currentGame.render();
+}
+
+function applyTheme() {
+  const selectedTheme = document.getElementById("themeSelector").value;
+  const theme = themes[selectedTheme];
+  if (theme) {
+    document.getElementById("playerSymbol").value = theme.player;
+    document.getElementById("enemySymbol").value = theme.enemy;
+    document.getElementById("bulletSymbol").value = theme.bullet;
+    if (currentGame) {
+      currentGame.options.playerSymbol = theme.player;
+      currentGame.options.enemySymbol = theme.enemy;
+      currentGame.options.bulletSymbol = theme.bullet;
+      currentGame.render();
+    }
+  }
+}
+
+function updateSymbols() {
+  if (!currentGame) return;
+  currentGame.options.playerSymbol = document.getElementById("playerSymbol").value || "A";
+  currentGame.options.enemySymbol = document.getElementById("enemySymbol").value || "@";
+  currentGame.options.bulletSymbol = document.getElementById("bulletSymbol").value || "|";
+  currentGame.render();
+}
+
+function handleSliderChange() {
+  if (gameStarted) {
+    startCustomGame();
+  } else {
+    renderInitialGameBoard();
+  }
+}
+
+/* ===========================================
+   ======   ADAPTIVE DIFFICULTY HELPERS  =====
+   =========================================== */
+function clamp(v, min, max) { return Math.max(min, Math.min(max, v)); }
+
+function difficultyFromScore(score, baseSpawnRate) {
+  // Justerbara kurvor – lätta att trimma
+  const spawnRate     = clamp(baseSpawnRate + 0.003 * score, 0.05, 0.98);     // chans/sek
+  const fallEvery     = clamp(6 - Math.floor(score / 10), 2, 6);              // färre = snabbare
+  const multiSpawn    = clamp(0.02 + 0.0015 * score, 0, 0.25);                // chans på två spawns
+  const driftChance   = clamp(0.05 + 0.002 * score, 0, 0.5);                  // chans per fiende att drifta sida
+  const fastEnemy     = clamp(0.03 + 0.001 * score, 0, 0.25);                 // chans att fienden är “snabb”
+  const bulletGapMs   = clamp(120 - 2 * score, 40, 120);                      // skjutfördröjning
+
+  return { spawnRate, fallEvery, multiSpawn, driftChance, fastEnemy, bulletGapMs };
+}
+
+class AsciiSpaceShooter {
+  constructor(width, height, options = {}) {
+    this.width = width;
+    this.height = height;
+    this.options = {
+      playerSymbol: options.playerSymbol || "A",
+      enemySymbol: options.enemySymbol || "@",
+      bulletSymbol: options.bulletSymbol || "|",
+      backgroundSymbol: " ",
+      spawnRate: options.spawnRate || 0.5, // basvärde – skalas med poäng
+    };
+    this.baseSpawnRate = this.options.spawnRate;
+
+    this.gameEl = document.getElementById("game");
+    this.scoreEl = document.getElementById("score");
+    this.messageEl = document.getElementById("game-message");
+
+    this.keysPressed = {};
+    this.lastShotAt = 0;
+
+    this.initVars();
+    this.setupEventListeners();
+
+    // Spawning sker varje sekund, sannolikhet styrs av svårighetsgrad
+    this.enemyInterval = setInterval(() => !this.gameOver && this.spawnEnemy(), 1000);
+    // Speluppdatering (rörelse/skott/kollisioner)
+    this.updateInterval = setInterval(() => this.update(), 100);
+  }
+
+  initVars() {
+    this.playerX = Math.floor(this.width / 2);
+    this.enemies = []; // {x, y, speed}
+    this.bullets = [];
+    this.score = 0;
+    this.gameOver = false;
+    this.enemyTick = 0;
+    this.render();
+  }
+
+  restartGame() {
+    clearInterval(this.enemyInterval);
+    clearInterval(this.updateInterval);
+    startCustomGame();
+  }
+
+  setupEventListeners() {
+    document.addEventListener("keydown", e => {
+      // Stoppa scroll när Space används i spelet
+      if (e.code === "Space") e.preventDefault();
+      this.keysPressed[e.key] = true;
+
+      if ((e.key === " " || e.key === "w" || e.key === "ArrowUp")) {
+        this.shoot();
+      }
+    });
+
+    document.addEventListener("keyup", e => {
+      if (e.code === "Space") e.preventDefault();
+      this.keysPressed[e.key] = false;
+    });
+  }
+
+  spawnEnemy() {
+    const d = difficultyFromScore(this.score, this.baseSpawnRate);
+    // Minst en chans att spawna
+    if (Math.random() < d.spawnRate) {
+      this.createEnemy(d);
+      // Ibland spawna två på samma sekund
+      if (Math.random() < d.multiSpawn) this.createEnemy(d);
+    }
+  }
+
+  createEnemy(d) {
+    const fast = Math.random() < d.fastEnemy;
+    const speed = fast ? 2 : 1;
+    this.enemies.push({ x: Math.floor(Math.random() * this.width), y: 0, speed });
+  }
+
+  shoot() {
+    if (this.gameOver) return;
+    const now = Date.now();
+    const d = difficultyFromScore(this.score, this.baseSpawnRate);
+    if (now - this.lastShotAt < d.bulletGapMs) return; // rate-limit
+    this.lastShotAt = now;
+
+    this.bullets.push({ x: this.playerX, y: this.height - 2 });
+  }
+
+  render() {
+    const inner = Array.from({ length: this.height }, () =>
+      Array.from({ length: this.width }, () => `<span>${this.options.backgroundSymbol}</span>`)
+    );
+
+    for (const bullet of this.bullets) {
+      if (bullet.y >= 0 && bullet.y < this.height)
+        inner[bullet.y][bullet.x] = `<span class="bullet">${this.options.bulletSymbol}</span>`;
+    }
+
+    for (const enemy of this.enemies) {
+      const y = Math.floor(enemy.y);
+      if (y >= 0 && y < this.height)
+        inner[y][enemy.x] = `<span class="enemy">${this.options.enemySymbol}</span>`;
+    }
+
+    inner[this.height - 1][this.playerX] = `<span class="player">${this.options.playerSymbol}</span>`;
+
+    const top = "╔" + "═".repeat(this.width) + "╗";
+    const bottom = "╚" + "═".repeat(this.width) + "╝";
+    const middle = inner.map(row => "║" + row.join("") + "║");
+    const fullDisplay = [top, ...middle, bottom].join("\n");
+
+    this.gameEl.innerHTML = fullDisplay;
+    this.gameEl.style.width = (this.width + 6) + "ch";
+    this.messageEl.innerText = "";
+  }
+
+  update() {
+    if (this.gameOver) return;
+
+    const d = difficultyFromScore(this.score, this.baseSpawnRate);
+
+    // Spelarens rörelse
+    if (this.keysPressed["ArrowLeft"] || this.keysPressed["a"]) {
+      if (this.playerX > 0) this.playerX--;
+    }
+    if (this.keysPressed["ArrowRight"] || this.keysPressed["d"]) {
+      if (this.playerX < this.width - 1) this.playerX++;
+    }
+    if (this.keysPressed[" "] || this.keysPressed["w"] || this.keysPressed["ArrowUp"]) {
+      this.shoot();
+    }
+
+    // Kulor uppåt
+    this.bullets = this.bullets
+      .map(b => ({ x: b.x, y: b.y - 1 }))
+      .filter(b => b.y >= 0);
+
+    // Fiende-rörelse-tick
+    this.enemyTick++;
+    if (this.enemyTick >= d.fallEvery) {
+      for (const enemy of this.enemies) {
+        // Horisontell drift ibland
+        if (Math.random() < d.driftChance) {
+          const dir = Math.sign(Math.random() - 0.5); // -1 eller 1
+          enemy.x = clamp(enemy.x + dir, 0, this.width - 1);
+        }
+        // Fall med individuell speed
+        enemy.y += enemy.speed;
+
+        const y = Math.floor(enemy.y);
+        if ((y === this.height - 1 && enemy.x === this.playerX) || y >= this.height) {
+          this.gameOver = true;
+          this.render();
+          document.getElementById("final-score").innerText = this.score;
+          document.getElementById("game-over-modal").style.display = "flex";
+          return;
+        }
+      }
+      this.enemyTick = 0;
+    }
+
+    // Kollisioner kula ↔ fiende
+    this.bullets = this.bullets.filter(bullet => {
+      for (let i = 0; i < this.enemies.length; i++) {
+        const enemy = this.enemies[i];
+        const currentY = Math.floor(enemy.y);
+        const prevY = Math.floor(enemy.y - enemy.speed); // täcker snabba fiender
+        if (bullet.x === enemy.x && (bullet.y === currentY || bullet.y === prevY)) {
+          this.enemies.splice(i, 1);
+          this.score++;
+          this.scoreEl.innerText = "Score: " + this.score;
+          return false;
+        }
+      }
+      return true;
+    });
+
+    this.render();
+  }
+}
+
+let currentGame;
+
+function startCustomGame() {
+  const width = +document.getElementById("width").value;
+  const height = +document.getElementById("height").value;
+  const playerSymbol = document.getElementById("playerSymbol").value || "A";
+  const enemySymbol = document.getElementById("enemySymbol").value || "@";
+  const bulletSymbol = document.getElementById("bulletSymbol").value || "|";
+  const difficulty = +document.getElementById("difficulty").value;
+
+  if (currentGame) {
+    clearInterval(currentGame.enemyInterval);
+    clearInterval(currentGame.updateInterval);
+  }
+
+  document.getElementById("score").innerText = "Score: 0";
+  document.getElementById("game").innerText = "";
+  document.getElementById("game-message").innerText = "";
+  document.getElementById("game-over-modal").style.display = "none";
+
+  currentGame = new AsciiSpaceShooter(width, height, {
+    playerSymbol,
+    enemySymbol,
+    bulletSymbol,
+    // Bas‐spawn påverkas av slider men skalar vidare med poäng i runtime
+    spawnRate: 0.2 + (difficulty * 0.1),
+  });
+}
+
+function renderInitialGameBoard() {
+  const width = +document.getElementById("width").value;
+  const height = +document.getElementById("height").value;
+  const playerSymbol = document.getElementById("playerSymbol").value || "A";
+
+  const inner = Array.from({ length: height }, () =>
+    Array.from({ length: width }, () => " ")
+  );
+  const playerX = Math.floor(width / 2);
+  inner[height - 1][playerX] = playerSymbol;
+
+  const top = "╔" + "═".repeat(width) + "╗";
+  const bottom = "╚" + "═".repeat(width) + "╝";
+  const middle = inner.map(row => "║" + row.join("") + "║");
+  const fullDisplay = [top, ...middle, bottom].join("\n");
+  document.getElementById("game").innerText = fullDisplay;
+}
+
+let gameStarted = false;
+renderInitialGameBoard();
+
+document.addEventListener("keydown", function handleStart(e) {
+  if (e.code === "Space") e.preventDefault(); // Stoppa scroll vid start
+  if (!gameStarted && (e.code === "Space" || e.key === "w" || e.key === "ArrowUp")) {
+    gameStarted = true;
+    const overlay = document.getElementById("start-overlay");
+    if (overlay) overlay.style.display = "none";
+    startCustomGame();
+  }
+});
+
+document.addEventListener("input", e => e.target.blur());
+document.addEventListener("change", e => e.target.blur());
+document.addEventListener("click", e => {
+  if (e.target.tagName === "BUTTON") e.target.blur();
+});
+            </script>
+</body>
+</html>
